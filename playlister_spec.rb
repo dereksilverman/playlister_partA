@@ -1,3 +1,8 @@
+require './lib/artist.rb'
+require './lib/song.rb'
+require './lib/genre.rb'
+
+
 describe "playlister" do
   it 'Can initialize an Artist' do
     lambda {Artist.new}.should_not raise_error
@@ -122,22 +127,4 @@ describe "playlister" do
     Genre.all.should eq(genres)
   end
 
-  # Extra Credit
-  # Complete any song test that is pending (undefined).
-
-  it 'Can initialize a song' do
-
-  end
-
-  it 'A song can have a name' do
-
-  end
-
-  it 'A song can have a genre' do
-
-  end
-
-  it 'A song has an artist' do
-
-  end
 end
